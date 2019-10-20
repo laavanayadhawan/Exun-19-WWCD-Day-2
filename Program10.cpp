@@ -29,7 +29,9 @@ node* create_circular_queue(void){
     return head;
 }
 node* delete_first_element(node* head){
-    	//implement
+          node* temp=head;
+	head=head->next;
+	delete temp;
 }
 void queue_print(node* head){
 	//implement
