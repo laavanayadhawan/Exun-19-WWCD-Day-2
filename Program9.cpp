@@ -4,7 +4,7 @@
 void merge(int* arr, int si, int mid, int ei){
     int i = si,j = mid + 1, count = 0;
     int temp[ei - si + 1];
-    while(i <= mid && j < ei){
+    while(i <= mid || j < ei){
         if(arr[i] > arr[j]){
             temp[count] = arr[j];
             j++;
