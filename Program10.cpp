@@ -32,6 +32,11 @@ node* delete_first_element(node* head){
     	//implement
 }
 void queue_print(node* head){
-	//implement
+	node *temp=head;
+	while(temp!=NULL)
+	{
+		
+		cout<<"data"<<temp->data<<endl;
+		temp=temp->next;
 }
 
